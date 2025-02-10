@@ -1,0 +1,24 @@
+<table class="table table-dark table-striped table-bordered">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Truck ID</td>
+            <td>Service Date</td>
+            <td>Service Type</td>
+            <td>Details</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let maintenance of maintenances">
+            <td> {{ maintenance.id  }} </td>
+            <td> {{maintenance.truckId}} </td>
+            <td> {{ maintenance.serviceType  }} </td>
+            <td> {{ maintenance.serviceDate  }} </td>
+            <td> {{ maintenance.details  }} </td>
+            <td>
+                <button class="btn btn-primary btn-sm"> Edit </button>
+                <button class="btn btn-danger btn-sm"> Delete </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
